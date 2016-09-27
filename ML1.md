@@ -155,6 +155,7 @@ set.seed(12345)
 modFitDecTree <- rpart(classe ~ ., data=TrainSet, method="class")
 fancyRpartPlot(modFitDecTree)
 ```
+![plot 2](figure-html/unnamed-chunk-18-1.png)
 
 #### Prediction on Test dataset
 
@@ -171,6 +172,7 @@ plot(confMatDecTree$table, col = confMatDecTree$byClass,
      main = paste("Decision Tree - Accuracy =",
                   round(confMatDecTree$overall['Accuracy'], 4)))
 ```
+![plot 3](figure-html/unnamed-chunk-20-1.png)
 
 #### Method: Generalized Boosted Model
 
@@ -200,6 +202,7 @@ confMatGBM
 plot(confMatGBM$table, col = confMatGBM$byClass, 
      main = paste("GBM - Accuracy =", round(confMatGBM$overall['Accuracy'], 4)))
 ```
+![plot 4](figure-html/unnamed-chunk-24-1.png)
 
 ### The accuracy/results of the three modeling methods above are:
 1. Random Forest : 0.9964
