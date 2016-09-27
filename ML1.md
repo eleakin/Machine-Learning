@@ -146,6 +146,7 @@ plot(confMatRandForest$table, col = confMatRandForest$byClass,
      main = paste("Random Forest - Accuracy =",
                   round(confMatRandForest$overall['Accuracy'], 4)))
 ```
+![plot 1](figure-html/unnamed-chunk-17-1.png)
 
 ### Method: Decision Tree Method
 
